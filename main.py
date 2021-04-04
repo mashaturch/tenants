@@ -10,7 +10,7 @@
 
 def questions (list_of_residents, list_debtor, list_phones, decision_making, list_of_tenants_alphabet):
     """Questions and answers for the user """
-    question_1 = '1) Кто живёт в определённой квартре?'
+    question_1 = '1) Кто живёт в определённой квартире?'
     question_2 = '2) Список всех жильцов в алфавитном порядке?'
     question_3 = '3) Список квартир, которые что-то должны?'
     question_4 = '4) Результаты голосования насчёт постройки футбольного поля?'
