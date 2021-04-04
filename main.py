@@ -12,8 +12,8 @@ def questions (list_of_residents, list_debtor, list_phones, decision_making, lis
     """Questions and answers for the user """
     question_1 = '1) Кто живёт в определённой квартире?'
     question_2 = '2) Список всех жильцов в алфавитном порядке?'
-    question_3 = '3) Список квартир, которые что-то должны?'
-    question_4 = '4) Результаты голосования насчёт постройки футбольного поля?'
+    question_3 = '3) Список квартир, где живут должники?'
+    question_4 = '4) Результаты голосования насчёт строительства футбольного поля?'
     question_5 = '5) Номер домашнего телефона определённой квартиры?'
     print ('Что вы бы хотели узнать?')
     print (question_1, question_2, question_3, question_4, question_5, sep = '\n')
@@ -91,9 +91,9 @@ with open ('input.txt', encoding = 'utf-8') as f_in:
     number_of_votes_consent = vote.count('за')
     number_of_votes_disagreement = len(vote) - number_of_votes_consent
     if number_of_votes_consent > number_of_votes_disagreement:
-        decision_making = 'Большинство людей за постройку футбольного поля.'
+        decision_making = 'Большинство людей за строительство футбольного поля.'
     elif number_of_votes_consent < number_of_votes_disagreement:
-        decision_making = 'Большинство людей против постройки футбольного поля.'
+        decision_making = 'Большинство людей против строительство футбольного поля.'
     else:
         decision_making = 'Жильцы не смогли принять общего решения, поэтому будет переголосование.'
 
